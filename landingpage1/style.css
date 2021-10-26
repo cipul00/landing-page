@@ -1,0 +1,31 @@
+/* setting navbar  */
+
+.navbar-brand {
+  font-family: "Viga", sans-serif;
+  font-size: 32px;
+}
+
+/* DEKSTOP VERSION */
+@media (min-width: 992px) {
+  .nav-link {
+    text-transform: uppercase;
+    margin-right: 30px;
+  }
+
+  /* utility */
+  .tombol {
+    text-transform: uppercase;
+    border-radius: 15px;
+  }
+
+  /* membuat garis bawah link */
+  .nav-link:hover::after {
+    content: " ";
+    display: block;
+    border-bottom: 3px solid #0b63dc;
+    width: 50%;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+  }
+}
